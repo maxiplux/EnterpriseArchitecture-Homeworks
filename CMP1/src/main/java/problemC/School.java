@@ -14,7 +14,7 @@ public class School {
     private int id;
     private String name;
 
-    @OneToMany(cascade = CascadeType.PERSIST)
+    @OneToMany(cascade = CascadeType.ALL)
     @MapKey(name="id")
     private Map<Integer, Student> students = new HashMap<>();
 
