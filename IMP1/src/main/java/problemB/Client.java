@@ -84,6 +84,8 @@ public class Client {
             customer.addOrder(order);
 
 
+
+
             session.persist(customer);
             session.getTransaction().commit();
         }
